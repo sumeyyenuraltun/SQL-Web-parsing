@@ -1,4 +1,4 @@
-Bu proje HTML tablo yapısı içeren bir Web sitesinden verileri çekerek bu verileri Python-PostgreSQL bağlantısı ile verileri veri tabanına kaydetmektedir. Veri tabanında kur_birimleri ve kur_verileri olmak üzere iki adet tablo bulunmaktadır. Kur_birimleri tablosunda benzersiz Primary Key yapısında kur_id ve kur_adi bulunmaktadir. İkinci tablo yani kur_verileri, kur_birimleri tablosundaki kur_id'yi referans ederek tabloyu oluşturmaktadır.Kur_birimleri tablosu kur_verileri tablosuyla bire-çok ilişki kurar. Kur_verileri tablosuna veriler eklenirken (kur_id, tarih, saat) kombinasyonuna bakar bu kombinasyon yoksa veri direkt eklenir, bu kombinasyonda veri varsa değerler güncellenir. Kaydedilen veriler basit bir arayüzde gösterilmektedir ve arayüzde basit bir verileri filtreleme yapısı bulunmaktadır.
+Bu proje HTML tablo yapısı içeren bir Web sitesinden verileri çekerek bu verileri Python-PostgreSQL bağlantısı ile verileri veri tabanına kaydetmektedir. Veri tabanında kur_birimleri ve kur_verileri olmak üzere iki adet tablo bulunmaktadır. Kur_birimleri tablosunda benzersiz Primary Key yapısında kur_id ve kur_adi bulunmaktadir. İkinci tablo yani kur_verileri, kur_birimleri tablosundaki kur_id'yi referans ederek tabloyu oluşturmaktadır.Kur_birimleri tablosu kur_verileri tablosuyla bire-çok ilişki kurar. Kur_verileri tablosuna veriler eklenirken (kur_id, tarih, saat) kombinasyonuna bakar bu kombinasyon yoksa veri direkt eklenir, bu kombinasyonda veri varsa değerler güncellenir. Kaydedilen veriler basit bir arayüzde gösterilmektedir ve arayüzde basit bir verileri filtreleme yapısı bulunmaktadır. Arayüzde sadece en son eklenen veriler yani programın en son çalıştırıldığı tarih ve saatte eklenen veriler gösterilir.
 
 *KULLANLILAN TEKNOLOJİ VE KÜTÜPHANELER*  
 
@@ -34,6 +34,7 @@ https://kur.doviz.com/
 0-0,9  
 ![image](https://github.com/user-attachments/assets/bd4ed9b3-ece5-461b-a770-b716d826bc81)
 *OLUŞAN VERİTABANINA ÖRNEK GÖRSEL*
+Dövizlere ait veriler program her çalıştırıldığı tarih ve saatte kaydedilmektedir. Bu şekilde tarih ve saatine göre değişen kur değerleri görülebilir.  
 ![image](https://github.com/user-attachments/assets/4160a91d-b3c0-4452-9778-ce8ccbf642ad)
 
 *KULLANDIĞIM KAYNAKLAR*  
