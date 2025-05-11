@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='arayuz_tasarimi.css')}}"
+    />
+    <h1 class="ana_baslik">Döviz Kuru</h1>
+    <div class="filtre_ekrani">
+      <h2>Fitreleme Seçenekleri</h2>
+      <form method="post" action="filtreli">
+        <table class="filtre_tablo">
+          <tr>
+            <td><p>Alış Değeri Aralığı(TL):</p></td>
+            <td><input type="number" name="min_alis" step="any" /></td>
+            <td><p>-</p></td>
+            <td><input type="number" name="max_alis" step="any" /></td>
+          </tr>
+          <tr>
+            <td><p>Gün İçi En Düşük Değeri(TL):</p></td>
+            <td><input type="number" name="min_dusuk" step="any" /></td>
+            <td><p>-</p></td>
+            <td><input type="number" name="max_dusuk" step="any" /></td>
+          </tr>
+          <tr>
+            <td><p>Değişim(%):</p></td>
+            <td>
+              <input type="number" name="min_degisim" step="any" min="-100" />
+            </td>
+            <td><p>-</p></td>
+            <td>
+              <input type="number" name="max_degisim" step="any" min="-100" />
+            </td>
+            <td><button>Filtrele</button></td>
+            <td>
+              <button type="submit" formaction="/" formmethod="get">
+                Filtreyi Sıfırla
+              </button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </head>
+  <table class="veriler" border="2">
+    <tr>
+      <th>Kur Adı</th>
+      <th>Alış</th>
+      <th>Satış</th>
+      <th>En Yüksek</th>
+      <th>En Düşük</th>
+      <th>Değişim</th>
+      <th>Tarih</th>
+      <th>Saat</th>
+    </tr>
+    {% for kur in doviz_kuru:%}
+    <tr>
+      <td>{{kur[0]}}</td>
+      <td>{{kur[1]}}</td>
+      <td>{{kur[2]}}</td>
+      <td>{{kur[3]}}</td>
+      <td>{{kur[4]}}</td>
+      <td>%{{kur[5]}}</td>
+      <td>{{kur[6]}}</td>
+      <td>{{kur[7]}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</html>
