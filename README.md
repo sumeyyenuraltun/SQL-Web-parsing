@@ -33,7 +33,7 @@ https://kur.doviz.com/
 4-25  
 0-0,9  
 ![image](https://github.com/user-attachments/assets/bd4ed9b3-ece5-461b-a770-b716d826bc81)
-*OLUŞAN VERİTABANINA ÖRNEK GÖRSEL*
+*OLUŞAN VERİTABANINA ÖRNEK GÖRSEL*  
 Dövizlere ait veriler program her çalıştırıldığı tarih ve saatte kaydedilmektedir. Bu şekilde tarih ve saatine göre değişen kur değerleri görülebilir.  
 ![image](https://github.com/user-attachments/assets/4160a91d-b3c0-4452-9778-ce8ccbf642ad)
 
