@@ -15,11 +15,11 @@ pip install flask requests beautifulsoup4 psycopg2
 
 *PROJE ÇALIŞMA AŞAMALARI*  
 
--request ve BeautifulSoup kullanılarak HTML tablosundaki veriler çekilir ve gerekli atama işlemi yapılarak veriler işlenir.
--psycopg2 ile PostgreSQL-Python bağlantısı sağlanır.
--Veri tabanı oluşturma,tablo oluşturma gibi işlemler yapılarak veriler tabloya kayıt edilir. Bu kısımda bu işlemler SQL cümleleri kullanılarak yapıldı ve fonksiyonel hale getirmek için veri tabanının daha önce olup olmadığına bakıldı. Eğer veri tabanı daha önce yoksa önce veri tabanı oluşturuldu ve veriler kaydedildi, eğer veri tabanı daha önceden varsa kaydedilen verileri anlık olarak güncellemek üzerine kod yazıldı.
--Arayüz oluşturmak için Flask kullanıldı.
--Arayüze filtreleme seçeneği koydum ve SQL sorguları yaparak verileri filtreleyebiliyorum.
+-request ve BeautifulSoup kullanılarak HTML tablosundaki veriler çekilir ve gerekli atama işlemi yapılarak veriler işlenir.  
+-psycopg2 ile PostgreSQL-Python bağlantısı sağlanır.  
+-Veri tabanı oluşturma,tablo oluşturma gibi işlemler yapılarak veriler tabloya kayıt edilir. Bu kısımda bu işlemler SQL cümleleri kullanılarak yapıldı ve fonksiyonel hale getirmek için veri tabanının daha önce olup olmadığına bakıldı. Eğer veri tabanı daha önce yoksa önce veri tabanı oluşturuldu ve veriler kaydedildi, eğer veri tabanı daha önceden varsa kaydedilen verileri anlık olarak güncellemek üzerine kod yazıldı.  
+-Arayüz oluşturmak için Flask kullanıldı.  
+-Arayüze filtreleme seçeneği koydum ve SQL sorguları yaparak verileri filtreleyebiliyorum.  
 
 VERİ KAYNAK LİNKİ  
 
